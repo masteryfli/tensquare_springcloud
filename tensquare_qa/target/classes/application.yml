@@ -1,0 +1,27 @@
+server: 
+  port: 9003
+spring: 
+  application:  
+    name: tensquare-qa #指定服务名
+  datasource:  
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.160.128:3306/tensquare_qa?characterEncoding=utf-8
+    username: root
+    password: root
+  jpa: 
+    database: MySQL
+    show-sql: true
+  redis:
+    host: 192.168.160.128
+
+
+eureka:                                     #添加注册eureka服务的配置
+  client:
+    service‐url:
+      defaultZone: http://127.0.0.1:6868/eureka
+    instance:
+      prefer‐ip‐address: true
+
+jwt:
+  config:
+    key: yfli

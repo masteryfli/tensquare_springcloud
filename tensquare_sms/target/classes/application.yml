@@ -1,0 +1,16 @@
+server:
+  port: 9009
+
+spring:
+  application:
+    name: tensquare-sms
+
+  rabbitmq:
+    host: 192.168.160.128
+
+aliyun:
+  sms:
+    accessKeyId: LTAI4GEocjH7iNKT71RPhmv2
+    accessKeySecret: 3BbnrAmSsT2e0abtBMW7ibpIu3ZFwn
+    template_code: SMS_189618644
+    sign_name: 小可爱
